@@ -1,23 +1,24 @@
-/* body{
+body{
     background: #250145;
     color: white;
-} */
+}
 .navigation{
     /* border: 2px solid red; */
+    position: fixed; top: 0; 
     justify-content: flex-start;
     flex-direction: column;
     display: flex;
     height: 100%;
     padding: 30px 30px;
     width: 15rem;
-    position: absolute;
-    z-index: 5;
+    z-index: 10;
+    transition: 0.3s ;
 }
 
 /* .logo{
     position: absolute; top: 20px;
 } */
-.btn{
+.subs-button{
     border-radius: 30px;
     margin-top: 10px;
     padding:  5px 10px;
@@ -25,23 +26,28 @@
     color: gold; border: none;
 }
 .navbarLink{
-    /* border: 2px solid yellow; */
-    height: 50%; display: flex; flex-direction: column;
-    padding-left: 10%; width: 100%;
+    height: 60%; display: flex; flex-direction: column;
     justify-content: space-between; 
-    margin-top: 70%;   
-    transition: 120ms;
-
-}
-.pageLink{
-    /* border: 2px solid white; */
-    width: 100%;
-    color: #9e9d9f;
-    display: flex; 
-    transition: 0.3s;
+    margin-top: 50%;   
+    margin-left: -30px;
+    padding-left: 30px;
+    overflow: hidden;
     cursor: pointer;
 }
+.navbarLink span{
+    position: absolute;
+    left: -100%;
+    transition: 0.3s;
+}
+.navbarLink:hover span{
+    left: 30%;
+}
+.pageLink{
+    color: #9e9d9f;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
 .pageLink:hover{
+    transform: translateX(20px) scale(1.2);
     color: white;
-    transform: scale(1.2) translateX(15px);
 }
