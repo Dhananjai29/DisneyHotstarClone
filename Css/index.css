@@ -1,11 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 body{
     background-color: #0F1014;
-
 }
 :root{
     --nav-link-color:rgb(138, 138, 138) ;
@@ -38,14 +41,14 @@ nav{
 .nav-link i{
     position: absolute;
 }
-span{
+.nav_link_name{
     /* display: none; */
     visibility: hidden;
     position: absolute;
     left: 0;
     transition: 0.4s ease;
 }
-.nav-link:hover span{
+.nav-link:hover .nav_link_name{
     visibility: visible;
     left: 70%;
 }
@@ -60,17 +63,61 @@ span{
     background-size: cover;
     filter: brightness(70%);
 }
+.hero-section .splide__slide .content_desc{
+    height: 400px; width: 380px;
+    position: absolute; top: 35%; left: 10%;
+    display: flex; flex-direction: column;
+    gap: 30px;
+}
+.hero-section .splide__slide .content_desc .content_logo img{
+    height: 100px; width: auto;
+}
+.hero-section .splide__slide .content_desc .line_one b{
+    color: white;
+    font-weight: 400;
+}
+.hero-section .splide__slide .content_desc .line_two p{
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 100;
+}
+.hero-section .splide__slide .content_desc .line_three b{
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 700;
+}
+.hero-section .splide__slide .content_desc .line_one b .age_certificate{
+    background: rgba(255, 255, 255, 0.35);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.hero-section .splide__slide .content_desc .line_four{
+    display: flex; align-items: center; gap: 10px;
+}
+.hero-section .splide__slide .content_desc .line_four button{
+    color: white;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.4);
+    height: 45px; width: 45px;
+    border: none; outline: none;
+    border-radius: 10px; 
+    font-size: 1rem;
+    display: flex; align-items: center; gap: 7px; justify-content: center;
+}
+.hero-section .splide__slide .content_desc .line_four .watch_now{
+    width: 70%;
+}
 .hero-section .thumbnails {
     display: flex;
     padding: 0;
     position: absolute;
-    bottom: 20%; right: 10%;
+    bottom: 25%; right: 10%;
     justify-content: center;
   }
   
   
   .hero-section .thumbnail {
-    width: 90px;
+    width: 80px;
     /* height: 90px; */
     overflow: hidden;
     list-style: none;
@@ -79,7 +126,7 @@ span{
     transition: 0.2s;
   }
   
-  .hero-section .thumbnail:hover {
+.hero-section .thumbnail:hover {
     transform:scale(1.3);
 }
 .hero-section .thumbnail img {
@@ -90,14 +137,16 @@ span{
 .main-division{
     z-index: 1;
     padding-left: 7%;
+    margin-top: -150px;
     position: absolute;
 }
 .main-division > .contentCard{
     color: white;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .main-division > .contentCard .heading{
     padding-right: 20px;
+    padding-bottom: 10px;
     display: flex; justify-content: space-between;
 }
 .main-division > .contentCard .heading a{
