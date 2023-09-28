@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    user-select: none; 
+}
+:root{
+    --nav-link-color:#E1E6F0;
+}
+body{
+    background-color: #0F0F14;
+}
+.navigation{
+    display: flex; justify-content: space-between; 
+    padding: 15px 20px 0 60px;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    background-color: #0F0F14;  
+    z-index: 10;
+
+    .left{
+        gap: 40px;
+        height: 100%;
+        align-items: center;    
+        display: flex;
+
+        .logo{  
+            height: 65%;
+    
+            img{
+                height: 100%;
+
+            }
+        }
+            .escape{
+                p{
+                    font-size: 2rem;
+                    font-weight: 300;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+  
+    }
+    .right{
+        gap: 20px;
+        align-items: center;
+        display: flex;
+        .login{
+            button{
+                height: 45px;
+                width: 110px;
+                font-size: 1.2rem;
+                background: linear-gradient(93.87deg,#095ae6,#062794);;
+                border-radius: 10px;
+                color: white;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        select{
+            height: 45px;
+            width: 130px;
+            font-size: 1.2rem;
+            background-color: #222226;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.subscripitionbody{
+    width: 100%;
+    gap: 200px;
+    background-color: #0F0F14;
+    display: flex; padding-top: 50px;
+
+    .subsLeft{
+        height: 90vh;
+        width: 35%;
+        position: relative;
+        overflow: hidden;
+
+        .heading{
+            
+            h1{
+                position: absolute;
+                font-size: 2.5rem;
+                font-weight: 800;
+                z-index: 2; padding: 80px;
+                color: var(--nav-link-color);
+            }
+        }
+        
+        .scroll-parent {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            padding: 2rem 0;
+            overflow: hidden;
+            
+            .gradient{
+                height: 100%; width: 100%;
+                position: absolute; top: 0;
+                background-image: radial-gradient(#0f0f1490,rgba(15, 15, 20, 0.4),rgba(15, 15, 20,0.5),rgb(15, 15, 20, 0.9), rgb(15, 15, 20), rgb(15, 15, 20));
+                z-index: 1;
+            }
+
+            .scroll-element {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                // z-index: -1;
+                left: 0%;
+                top: 0%;
+                display: grid; 
+                grid-template-columns: auto auto auto auto;
+                animation: primary 60s infinite linear;
+
+                img{
+
+                    padding: 5px;
+                    border-radius: 15px;
+                    height: 150px; width: 100%;
+                }
+            }
+        }
+          
+          @keyframes primary {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            25% {
+                transform: translate3d(0,-600px, 0); /* The image width */
+            }
+            50% {
+                transform: translate3d(0, 0, 0);
+            }
+            75% {
+                transform: translate3d(0,-600px, 0); /* The image width */
+            }
+            100%{
+                transform: translate3d(0, 0, 0);
+
+            }
+       }
+    }
+    .subsRight{
+        height: 80vh;
+        width: 60%;
+    }
+}
