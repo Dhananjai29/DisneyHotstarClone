@@ -91,17 +91,16 @@
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details {
   position: absolute;
-  top: -50px;
-  left: -65px;
-  height: 325px;
-  width: 270px;
+  height: 420px;
+  width: 360px;
   background: #0F1014;
   border-radius: 20px;
   transition: 0.3s;
   overflow: hidden;
   scale: 0.1;
   visibility: hidden;
-  z-index: 1;
+  z-index: 10;
+  box-shadow: 1px 1px 30px #222326;
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details .details_image {
   height: 50%;
@@ -116,12 +115,13 @@
 .main-division .card-holder .contentCard .splide .splide__slide .details .details_body {
   display: flex;
   height: 70%;
+  width: 100%;
   flex-direction: column;
   color: white;
   position: absolute;
   top: 30%;
   gap: 15px;
-  padding: 10px 10px;
+  padding: 0px 20px;
   background-image: linear-gradient(to bottom, rgba(15, 16, 20, 0), rgba(15, 16, 20, 0.7215686275), #0f1014, #0f1014, rgba(15, 16, 20, 0.7254901961), rgba(15, 16, 20, 0.7254901961), rgba(15, 16, 20, 0.7058823529), rgba(15, 16, 20, 0.7058823529));
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_logo {
@@ -157,6 +157,6 @@
   cursor: pointer;
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details .details_body .genre p {
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
 }/*# sourceMappingURL=contentCard.css.map */

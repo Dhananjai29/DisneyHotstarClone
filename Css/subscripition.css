@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,13 +34,13 @@ body {
   display: flex;
 }
 .navigation .left .logo {
-  height: 65%;
+  height: 55%;
 }
 .navigation .left .logo img {
   height: 100%;
 }
 .navigation .left .escape p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: white;
   cursor: pointer;
@@ -74,24 +74,24 @@ body {
 
 .subscripitionbody {
   width: 100%;
-  gap: 200px;
+  gap: 10px;
   background-color: #0F0F14;
   display: flex;
   padding-top: 50px;
 }
 .subscripitionbody .subsLeft {
-  height: 90vh;
-  width: 35%;
+  height: 100%;
+  width: 30%;
   position: relative;
-  overflow: hidden;
 }
 .subscripitionbody .subsLeft .heading h1 {
   position: absolute;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   z-index: 2;
-  padding: 80px;
-  color: var(--nav-link-color);
+  padding: 100px 40px;
+  color: #E1E6F0;
+  background: linear-gradient(to bottom, #0F0F14, #0F0F14, rgba(15, 15, 20, 0.031372549));
 }
 .subscripitionbody .subsLeft .scroll-parent {
   position: relative;
@@ -105,7 +105,7 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
-  background-image: radial-gradient(rgba(15, 15, 20, 0.5647058824), rgba(15, 15, 20, 0.4), rgba(15, 15, 20, 0.5), rgba(15, 15, 20, 0.9), rgb(15, 15, 20), rgb(15, 15, 20));
+  background-image: radial-gradient(rgba(15, 15, 20, 0.723), rgba(15, 15, 20, 0.8), rgba(15, 15, 20, 0.8), rgba(15, 15, 20, 0.9), rgb(15, 15, 20), rgb(15, 15, 20));
   z-index: 1;
 }
 .subscripitionbody .subsLeft .scroll-parent .scroll-element {
@@ -116,12 +116,12 @@ body {
   top: 0%;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  animation: primary 60s infinite linear;
+  animation: primary 120s infinite linear;
 }
 .subscripitionbody .subsLeft .scroll-parent .scroll-element img {
   padding: 5px;
   border-radius: 15px;
-  height: 150px;
+  height: 130px;
   width: 100%;
 }
 @keyframes primary {
@@ -142,6 +142,115 @@ body {
   }
 }
 .subscripitionbody .subsRight {
-  height: 80vh;
-  width: 60%;
+  margin-top: 80px;
+  width: 70%;
+  height: 100%;
+  color: white;
+  padding: 0 50px;
+}
+.subscripitionbody .subsRight .right-top table {
+  width: 100%;
+  color: #E1E6F0;
+  text-align: center;
+}
+.subscripitionbody .subsRight .right-top table tr :nth-child(2) {
+  background-color: #17181F;
+}
+.subscripitionbody .subsRight .right-top table thead {
+  height: 70px;
+  width: 100%;
+  color: #707A94;
+}
+.subscripitionbody .subsRight .right-top table thead tr :nth-child(1) {
+  width: 40%;
+}
+.subscripitionbody .subsRight .right-top table thead tr :nth-child(1) th {
+  width: 20%;
+  font-size: 1.2rem;
+}
+.subscripitionbody .subsRight .right-top table thead tr :nth-child(1) th small {
+  font-weight: 100;
+}
+.subscripitionbody .subsRight .right-top table tbody tr {
+  height: 70px;
+  color: #707A94;
+}
+.subscripitionbody .subsRight .right-top table tbody tr :nth-child(1) {
+  text-align: left;
+  color: #E1E6F0;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.subscripitionbody .subsRight .right-top table tbody tr td {
+  font-size: 0.95rem;
+}
+.subscripitionbody .subsRight .right-top table tbody tr td span {
+  font-weight: 100;
+  font-size: 0.95rem;
+  color: #707A94;
+}
+.subscripitionbody .subsRight .right-bottom .time {
+  height: 50px;
+  width: 220px;
+  padding: 0 20px;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252833;
+  margin-top: 30px;
+}
+.subscripitionbody .subsRight .right-bottom .time button {
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  margin-right: 10px;
+  font-weight: 900;
+}
+.subscripitionbody .subsRight .right-bottom .time span {
+  background: linear-gradient(to right, #095ae6, #062794);
+  border-radius: 50%;
+  padding: 2px;
+}
+.subscripitionbody .subsRight .right-bottom .price {
+  margin-top: 30px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscripitionbody .subsRight .right-bottom .price .card {
+  width: 32%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.402);
+  background-color: transparent;
+  padding: 10px 20px;
+  position: relative;
+  cursor: pointer;
+}
+.subscripitionbody .subsRight .right-bottom .price .card h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFCC75;
+}
+.subscripitionbody .subsRight .right-bottom .price .card small {
+  color: #E1E6F0;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.subscripitionbody .subsRight .right-bottom .price .card p {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.subscripitionbody .subsRight .right-bottom .price .card span {
+  background: linear-gradient(to right, #095ae6, #062794);
+  border-radius: 50%;
+  padding: 2px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: 4px solid #0F0F14;
 }/*# sourceMappingURL=subscripition.css.map */

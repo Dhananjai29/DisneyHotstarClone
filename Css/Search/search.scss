@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --nav-link-color:rgb(138, 138, 138) ;
+}
+body{
+    background: #13141A;
+}
+
+.searchBar{
+    width: 88%; height: 80px;
+    // margin: 0px auto;
+    position: absolute;
+    left: 40%; top: 10%;
+    transform: translate(-35%, -30%);
+    background: #252833;
+    display: flex; justify-content: center; align-items: center;
+    border-radius: 0.75rem;
+    color: var(--nav-link-color);
+
+    .searchIcon{
+        scale: 1.4;
+        margin-right: 25px;
+    }
+
+    input{
+        width: 90%; height: 70%;
+        background: transparent;
+        border: none; outline: none;
+        color: var(--nav-link-color);
+        font-size: 1.4rem; font-weight: 700;
+
+        &:focus{
+            color: white;
+        }
+    }
+}
+
+.mainBody{
+
+    position: absolute;
+    top: 25%; left: 10%;
+    width: 90%; display: flex;
+    flex-wrap: wrap;
+    
+    h3{
+        color: var(--nav-link-color);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .cards{
+       width: 100%; display: flex; 
+       flex-wrap: wrap; gap: 10px ;
+    
+        .card-inner{
+            height: 250px; width: 13.3%;
+            // border-radius: 20px;
+            // overflow: hidden;
+            transition: 0.3s ease-in;
+            transition-delay: 0.5s;
+            background-size: cover;
+            position: relative;
+            display: flex; align-items: center;
+            // justify-content: center;
+            
+            &:hover{
+                .details{
+                    visibility: visible;
+                    transition: 0.3s ease all;
+                    transition-delay: 0.4s;
+                    transform: scale(12);
+    
+                }
+            }
+            .image{
+                position: absolute;
+                height: 100%; width: 100%;
+                overflow: hidden; display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                img{
+                    height: 100%;
+                    transform: scale(1.5);   
+                    background-size: contain;         
+                }
+            }
+    
+            .details{
+                position: absolute;
+                top: -50px; left: -50px;
+                height: 325px; width: 270px;
+                background: #0F1014;
+                border-radius: 20px;
+                transition: 0.3s;
+                overflow: hidden;
+                scale: 0.1;
+                visibility: hidden;
+                z-index: 1;
+    
+    
+                .details_image{
+                    height: 50%;
+                    width: 100%;
+                    overflow: hidden;
+    
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        background-size: cover;
+                    }
+                }
+    
+                .details_body{
+                    display: flex; height: 70%; flex-direction: column; color: white;
+                    position: absolute; top: 30%;
+                    gap: 15px; padding: 10px 10px;background-image: linear-gradient(to bottom, #0f101400,#0f1014b8, #0f1014, #0f1014,#0f1014b9,#0f1014b9,#0f1014b4,#0f1014b4,);
+    
+    
+                    .details_logo{
+                        height: 30%; width: 100%;
+    
+                        img{
+                            height: 100%;
+                        }
+                    }
+    
+                    .details_button{
+                        display: flex; gap: 10px;
+    
+                        .watchNow{
+                            width: 76%;
+                            background-color: #c6c7cb;
+                            font-size: 0.8rem;
+                            color: #222326;
+                            font-weight: 700;
+                            transition: 0.4s;
+    
+                            &:hover{
+                                transform: scale(1.02);
+                            }
+                        }
+                        button{
+                            height: 40px;
+                            padding: 0 20px;
+                            border-radius: 10px;
+                            // font-size: 1.2rem;
+                            outline: none; border: none;
+                            background-color: #222326;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .genre{
+                        p{
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

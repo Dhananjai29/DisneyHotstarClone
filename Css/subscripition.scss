@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 *{
     margin: 0;padding: 0;box-sizing: border-box;
@@ -27,16 +27,15 @@ body{
         display: flex;
 
         .logo{  
-            height: 65%;
+            height: 55%;
     
             img{
                 height: 100%;
-
             }
         }
             .escape{
                 p{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     font-weight: 300;
                     color: white;
                     cursor: pointer;
@@ -77,24 +76,24 @@ body{
 
 .subscripitionbody{
     width: 100%;
-    gap: 200px;
+    gap: 10px;
     background-color: #0F0F14;
     display: flex; padding-top: 50px;
 
     .subsLeft{
-        height: 90vh;
-        width: 35%;
+        height:100%;
+        width: 30%;
         position: relative;
-        overflow: hidden;
 
         .heading{
             
             h1{
                 position: absolute;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: 800;
-                z-index: 2; padding: 80px;
-                color: var(--nav-link-color);
+                z-index: 2; padding: 100px 40px;
+                color: #E1E6F0;
+                background: linear-gradient(to bottom, #0F0F14, #0F0F14, #0f0f1408);
             }
         }
         
@@ -108,7 +107,7 @@ body{
             .gradient{
                 height: 100%; width: 100%;
                 position: absolute; top: 0;
-                background-image: radial-gradient(#0f0f1490,rgba(15, 15, 20, 0.4),rgba(15, 15, 20,0.5),rgb(15, 15, 20, 0.9), rgb(15, 15, 20), rgb(15, 15, 20));
+                background-image: radial-gradient(rgba(15, 15, 20, 0.723),rgba(15, 15, 20, 0.8),rgba(15, 15, 20,0.8),rgb(15, 15, 20, 0.9), rgb(15, 15, 20), rgb(15, 15, 20));
                 z-index: 1;
             }
 
@@ -121,13 +120,13 @@ body{
                 top: 0%;
                 display: grid; 
                 grid-template-columns: auto auto auto auto;
-                animation: primary 60s infinite linear;
+                animation: primary 120s infinite linear;
 
                 img{
 
                     padding: 5px;
                     border-radius: 15px;
-                    height: 150px; width: 100%;
+                    height: 130px; width: 100%;
                 }
             }
         }
@@ -151,8 +150,135 @@ body{
             }
        }
     }
+    
     .subsRight{
-        height: 80vh;
-        width: 60%;
+        margin-top: 80px;
+        width: 70%; height: 100%;
+        color: white;
+        padding: 0 50px;
+        .right-top{
+            table{
+                width: 100%;
+                color: #E1E6F0;
+                text-align: center;
+
+                tr{
+                    :nth-child(2)
+                    {
+                        background-color: #17181F;
+                    }
+                }
+
+                thead{
+                    height: 70px; width: 100%;
+                    color: #707A94;
+
+                    tr{
+                    :nth-child(1)
+                    {
+                        width: 40%;
+
+                        th{
+                            width: 20%;
+                            font-size: 1.2rem;
+
+                            small{
+                                font-weight: 100;
+                            }
+                        }
+                    }
+                }
+                    
+                }
+
+                tbody{
+
+                    tr{
+                        height: 70px;
+                        color: #707A94;
+                        
+                        :nth-child(1){
+                            text-align: left;
+                            color: #E1E6F0;
+                            font-weight: 800;
+                            font-size: 1rem;
+                        }
+
+                        td{
+                            font-size: 0.95rem;
+
+                            span{
+                                font-weight: 100;
+                                font-size: 0.95rem;
+                                color: #707A94;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-bottom{
+
+            .time{
+                height: 50px; width: 220px;
+                padding: 0 20px;
+                border-radius: 30px;
+                margin: 0 auto;
+                display: flex; justify-content: center;
+                align-items: center;
+                background-color: #252833;
+                margin-top: 30px;
+                button{
+                    height: 100%;
+                    background: transparent; border: none; outline: none;
+                    padding-left: 10px; margin-right: 10px;
+                    font-weight: 900;
+                }
+
+                span{
+                    background: linear-gradient(to right, #095ae6,#062794);
+                    border-radius: 50%;
+                    padding: 2px;
+                }
+            }
+
+            .price{
+                margin-top: 30px;
+                height: 80px; width: 100%;
+                display: flex; justify-content: space-between;
+
+                .card{
+                    width: 32%; border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.402);
+                    background-color: transparent;
+                    padding: 10px 20px;
+                    position: relative;
+                    cursor: pointer;
+
+                    h4{
+                        font-weight: 600;
+                        font-size: 1rem;
+                        color: #FFCC75;
+                    }
+                    small{
+                        color: #E1E6F0;
+                        font-size: 0.8rem;
+                        font-weight: 100;
+                    }
+                    p{
+                        font-weight: 800;
+                        font-size: 1.4rem;
+                    }
+
+                    span{
+                        background: linear-gradient(to right, #095ae6,#062794);
+                        border-radius: 50%;
+                        padding: 2px;
+                        position: absolute; top: -10px; right: -10px;
+                        border: 4px solid #0F0F14;
+                    }
+                }
+            }
+        }
     }
 }
