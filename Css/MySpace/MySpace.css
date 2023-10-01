@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --nav-link-color:rgb(138, 138, 138) ;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.19), black), url("../../Images/pexels-stein-egil-liland-10903696.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.helpSupport button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+  gap: 5px;
+  background-color: rgba(42, 42, 42, 0.802);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.helpSupport button:hover {
+  transform: scale(1.05);
+  background-color: rgba(184, 184, 184, 0.62);
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--nav-link-color);
+  line-height: 2rem;
+}
+.message h2 {
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.message p {
+  font-size: 0.9rem;
+}
+.message .login {
+  margin-top: 1rem;
+}
+.message .login button {
+  height: 45px;
+  width: 200px;
+  font-size: 1.2rem;
+  background: linear-gradient(93.87deg, #095ae6, #062794);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}/*# sourceMappingURL=MySpace.css.map */

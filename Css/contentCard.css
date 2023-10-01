@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.main-division {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 10%;
+}
+.main-division .card-holder {
+  overflow: hidden;
+}
+.main-division .card-holder .contentCard {
+  width: 100%;
+  margin-top: 50px;
+  color: white;
+}
+.main-division .card-holder .contentCard .heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 0 0;
+}
+.main-division .card-holder .contentCard .heading a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.632);
+  font-weight: 600;
+}
+.main-division .card-holder .contentCard .heading a:hover {
+  color: white;
+}
+.main-division .card-holder .contentCard .splide {
+  height: 85%;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.main-division .card-holder .contentCard .splide:hover .splide__arrow {
+  opacity: 1;
+}
+.main-division .card-holder .contentCard .splide .splide__arrow {
+  opacity: 0;
+  color: white;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0));
+  border-radius: 1px;
+  transition: 0.3s;
+  z-index: 1;
+}
+.main-division .card-holder .contentCard .splide .splide__arrow--prev {
+  left: 0;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0));
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.main-division .card-holder .contentCard .splide .splide__slide {
+  height: 250px;
+  transition: 0.3s ease-in;
+  transition-delay: 0.5s;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main-division .card-holder .contentCard .splide .splide__slide:hover .details {
+  visibility: visible;
+  transition: 0.3s ease all;
+  transition-delay: 0.2s;
+  transform: scale(11);
+}
+.main-division .card-holder .contentCard .splide .splide__slide .image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .image img {
+  height: 100%;
+  width: 100%;
+  scale: 1.35;
+  background-size: cover;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details {
+  position: absolute;
+  height: 420px;
+  width: 360px;
+  background: #0F1014;
+  border-radius: 20px;
+  transition: 0.3s;
+  overflow: hidden;
+  scale: 0.1;
+  visibility: hidden;
+  z-index: 10;
+  box-shadow: 1px 1px 30px #222326;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_image {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_image img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body {
+  display: flex;
+  height: 70%;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 30%;
+  gap: 15px;
+  padding: 0px 20px;
+  background-image: linear-gradient(to bottom, rgba(15, 16, 20, 0), rgba(15, 16, 20, 0.7215686275), #0f1014, #0f1014, rgba(15, 16, 20, 0.7254901961), rgba(15, 16, 20, 0.7254901961), rgba(15, 16, 20, 0.7058823529), rgba(15, 16, 20, 0.7058823529));
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_logo {
+  height: 30%;
+  width: 100%;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_logo img {
+  height: 100%;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_button {
+  display: flex;
+  gap: 10px;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_button .watchNow {
+  width: 76%;
+  background-color: #c6c7cb;
+  font-size: 0.8rem;
+  color: #222326;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_button .watchNow:hover {
+  transform: scale(1.02);
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_button button {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #222326;
+  color: white;
+  cursor: pointer;
+}
+.main-division .card-holder .contentCard .splide .splide__slide .details .details_body .genre p {
+  font-size: 1rem;
+  font-weight: 500;
+}/*# sourceMappingURL=contentCard.css.map */

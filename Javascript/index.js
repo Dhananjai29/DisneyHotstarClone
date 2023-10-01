@@ -1,6 +1,10 @@
 var splide = new Splide( '#main-carousel', {
     pagination: false,
-    arrows: false
+    arrows: false,
+    drag: false,
+    autoplay: true,
+    interval: 7000,
+    type: 'loop',
   } );
   
   

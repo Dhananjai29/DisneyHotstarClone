@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --nav-link-color:rgb(138, 138, 138) ;
+}
+
+body {
+  background: #13141A;
+}
+
+.searchBar {
+  width: 88%;
+  height: 80px;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  transform: translate(-35%, -30%);
+  background: #252833;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  color: var(--nav-link-color);
+}
+.searchBar .searchIcon {
+  scale: 1.4;
+  margin-right: 25px;
+}
+.searchBar input {
+  width: 90%;
+  height: 70%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--nav-link-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.searchBar input:focus {
+  color: white;
+}
+
+.mainBody {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainBody h3 {
+  color: var(--nav-link-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.mainBody .cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mainBody .cards .card-inner {
+  height: 250px;
+  width: 13.3%;
+  transition: 0.3s ease-in;
+  transition-delay: 0.5s;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.mainBody .cards .card-inner:hover .details {
+  visibility: visible;
+  transition: 0.3s ease all;
+  transition-delay: 0.4s;
+  transform: scale(12);
+}
+.mainBody .cards .card-inner .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.mainBody .cards .card-inner .image img {
+  height: 100%;
+  transform: scale(1.5);
+  background-size: contain;
+}
+.mainBody .cards .card-inner .details {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  height: 325px;
+  width: 270px;
+  background: #0F1014;
+  border-radius: 20px;
+  transition: 0.3s;
+  overflow: hidden;
+  scale: 0.1;
+  visibility: hidden;
+  z-index: 1;
+}
+.mainBody .cards .card-inner .details .details_image {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.mainBody .cards .card-inner .details .details_image img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.mainBody .cards .card-inner .details .details_body {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 30%;
+  gap: 15px;
+  padding: 10px 10px;
+  background-image: linear-gradient(to bottom, rgba(15, 16, 20, 0), rgba(15, 16, 20, 0.7215686275), #0f1014, #0f1014, rgba(15, 16, 20, 0.7254901961), rgba(15, 16, 20, 0.7254901961), rgba(15, 16, 20, 0.7058823529), rgba(15, 16, 20, 0.7058823529));
+}
+.mainBody .cards .card-inner .details .details_body .details_logo {
+  height: 30%;
+  width: 100%;
+}
+.mainBody .cards .card-inner .details .details_body .details_logo img {
+  height: 100%;
+}
+.mainBody .cards .card-inner .details .details_body .details_button {
+  display: flex;
+  gap: 10px;
+}
+.mainBody .cards .card-inner .details .details_body .details_button .watchNow {
+  width: 76%;
+  background-color: #c6c7cb;
+  font-size: 0.8rem;
+  color: #222326;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.mainBody .cards .card-inner .details .details_body .details_button .watchNow:hover {
+  transform: scale(1.02);
+}
+.mainBody .cards .card-inner .details .details_body .details_button button {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #222326;
+  color: white;
+  cursor: pointer;
+}
+.mainBody .cards .card-inner .details .details_body .genre p {
+  font-size: 0.75rem;
+  font-weight: 600;
+}/*# sourceMappingURL=search.css.map */
