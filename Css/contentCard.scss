@@ -24,6 +24,11 @@
             .heading{
                 display: flex; justify-content: space-between;
                 padding: 0 15px 0 0;
+                
+                h2{
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
 
                 a{
                     text-decoration: none;
@@ -93,7 +98,7 @@
                         border-radius: 10px;
                         img{
                             height: 100%; width: 100%;
-                            scale: 1.35;
+                            transform: scaleY(1.3);
                             background-size: cover;
                         }
                     }
@@ -101,7 +106,7 @@
     
                     .details{
                         position: absolute;
-                        height: 420px; width: 360px;
+                        height: 300px; width: 250px;
                         background: #0F1014;
                         border-radius: 20px;
                         transition: 0.3s;
@@ -168,7 +173,7 @@
             
                             .genre{
                                 p{
-                                    font-size: 1rem;
+                                    font-size: 0.7rem;
                                     font-weight: 500;
                                 }
                             }

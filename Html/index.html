@@ -17,11 +17,11 @@
     <title>Watch Popular TV Shows, Movies, Sports</title>
 </head>
 <body>
-    <nav>
+    <nav id="Navbar">
         <div class="logo" style="position: absolute; top: 30px; cursor: pointer;">
             <img src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg" alt="" onclick = "window.location.href='subscription.html';">
           </div>
-        <div class="nav-link">
+        <div class="nav-link" onmouseenter="expand()" onmouseleave="shrink()">
             <a class="link" href="./MySpace.html">
                 <i data-lucide="user"></i><span class="nav_link_name">My Space</span>
             </a>
@@ -39,9 +39,6 @@
             </a>
             <a class="link">
                 <i data-lucide="trophy"></i><span class="nav_link_name">Sports</span>
-            </a>
-            <a class="link">
-                <i data-lucide="baby"></i><span class="nav_link_name">Kids</span>
             </a>
         </div>
     </nav>
@@ -196,9 +193,7 @@
     </div>
     
     <div class="main-division">
-      <div class="gradient" style="height: 100vh;">
-
-      </div>
+      
       <div class="card-holder">
         <div class="contentCard">
           <div class="heading">

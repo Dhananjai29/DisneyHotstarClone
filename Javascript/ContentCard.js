@@ -7,7 +7,7 @@
     breakpoints:{
       1080: {
         perPage: 6,
-        height: '160px',
+        height: '180px',
       },
       768: {
         perPage : 6,

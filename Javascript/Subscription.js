@@ -35,7 +35,7 @@ function priceBtn(y) {
         $("tr th:nth-child(4)").css("background-color", "transparent");
         $("tr td:nth-child(4)").css("background-color", "transparent");
         
-    }
+    } 
     else if( y === 3)
     {
         PriceBtn2.style.border = '2px solid white';
