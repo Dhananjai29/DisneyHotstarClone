@@ -19,14 +19,13 @@ body {
   height: 100vh;
 }
 
-.hero-section .splide__slide img {
+.hero-section .splide__slide img, .hero-section .splide__slide video {
   height: 100%;
   width: 100%;
-  filter: brightness(40%);
+  filter: brightness(60%);
 }
 
 .hero-section .splide__slide .content_desc {
-  height: 400px;
   width: 380px;
   position: absolute;
   top: 30%;
@@ -123,4 +122,3 @@ body {
   width: 100%;
   border-radius: 5px;
 }/*# sourceMappingURL=index.css.map */
-

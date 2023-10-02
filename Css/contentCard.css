@@ -25,6 +25,10 @@
   justify-content: space-between;
   padding: 0 15px 0 0;
 }
+.main-division .card-holder .contentCard .heading h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 .main-division .card-holder .contentCard .heading a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.632);
@@ -74,7 +78,7 @@
 .main-division .card-holder .contentCard .splide .splide__slide:hover .details {
   visibility: visible;
   transition: 0.3s ease all;
-  transition-delay: 0.2s;
+  transition-delay: 0.4s;
   transform: scale(11);
 }
 .main-division .card-holder .contentCard .splide .splide__slide .image {
@@ -86,13 +90,13 @@
 .main-division .card-holder .contentCard .splide .splide__slide .image img {
   height: 100%;
   width: 100%;
-  scale: 1.35;
+  transform: scaleY(1.3);
   background-size: cover;
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details {
   position: absolute;
-  height: 420px;
-  width: 360px;
+  height: 300px;
+  width: 250px;
   background: #0F1014;
   border-radius: 20px;
   transition: 0.3s;
@@ -130,6 +134,7 @@
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_logo img {
   height: 100%;
+  max-width: 80%;
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details .details_body .details_button {
   display: flex;
@@ -157,6 +162,6 @@
   cursor: pointer;
 }
 .main-division .card-holder .contentCard .splide .splide__slide .details .details_body .genre p {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 500;
 }/*# sourceMappingURL=contentCard.css.map */

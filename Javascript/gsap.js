@@ -4,8 +4,8 @@ gsap.to(".main-division", {
         trigger: '.main-division',
         scroller: 'body',
         // markers: true,
-        start: 'top 0%',
-        end: 'top -50%',
+        start: 'top 50%',
+        end: 'top -10%',
         scrub: 3
     }
 })

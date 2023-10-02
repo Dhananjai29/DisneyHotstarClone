@@ -234,10 +234,10 @@ body {
 .subscripitionbody .subsRight .right-bottom .price .card h4 {
   font-weight: 600;
   font-size: 1rem;
-  color: #FFCC75;
+  color: #707A94;
 }
 .subscripitionbody .subsRight .right-bottom .price .card small {
-  color: #E1E6F0;
+  color: #707A94;
   font-size: 0.8rem;
   font-weight: 100;
 }
@@ -253,4 +253,158 @@ body {
   top: -10px;
   right: -10px;
   border: 4px solid #0F0F14;
+  display: none;
+}
+
+.modal .modal-content {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 60vh;
+  background-color: #252833;
+  color: white;
+  border-radius: 10px;
+}
+.modal .modal-content .image_scroller {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.modal .modal-content .image_scroller .modal-gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(to left, #252833, rgba(37, 40, 51, 0.6980392157), rgba(37, 40, 51, 0));
+  z-index: 1;
+}
+.modal .modal-content .image_scroller .scroller {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  animation: modalScroller 60s infinite linear;
+}
+.modal .modal-content .image_scroller .scroller img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 0 3px;
+}
+.modal .modal-content .image_scroller .middle {
+  animation: modalScroller-middle 60s infinite linear;
+  margin: 5px 0;
+}
+@keyframes modalScroller {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(-100px, 0, 0); /* The image width */
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  75% {
+    transform: translate3d(-100px, 0, 0); /* The image width */
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes modalScroller-middle {
+  0% {
+    transform: translate3d(-100px, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, 0, 0); /* The image width */
+  }
+  50% {
+    transform: translate3d(-100px, 0, 0);
+  }
+  75% {
+    transform: translate3d(0, 0, 0); /* The image width */
+  }
+  100% {
+    transform: translate3d(-100px, 0, 0);
+  }
+}
+.modal .modal-content .login_credentials {
+  padding: 30px;
+}
+.modal .modal-content .login_credentials h6 {
+  font-weight: 700;
+}
+.modal .modal-content .login_credentials .button button {
+  background: linear-gradient(to right, #095ae6, #062794);
+  color: white;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease all;
+  cursor: not-allowed;
+}
+.modal .modal-content .login_credentials .button :hover {
+  background: linear-gradient(to right, rgba(9, 90, 230, 0.3921568627), rgba(6, 39, 148, 0.3921568627));
+  color: rgba(255, 255, 255, 0.477);
+}
+.modal .modal-content .login_credentials .input-container {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 10px;
+}
+.modal .modal-content .login_credentials .input-container p {
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #555;
+}
+.modal .modal-content .login_credentials .input-container:focus {
+  border: 2px solid white;
+}
+.modal .modal-content .login_credentials .input-container label {
+  position: absolute;
+  top: 13px;
+  left: 70px;
+  font-size: 0.8rem;
+  color: #989898;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.modal .modal-content .login_credentials .input-container input {
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: transparent;
+  width: 100%;
+  height: 45px;
+  padding: 8px 0 5px 10px;
+  font-size: 16px;
+  color: #fff;
+}
+.modal .modal-content .login_credentials .input-container input:focus {
+  outline: none;
+  border: 1px solid #fff;
+}
+.modal .modal-content .login_credentials .input-container input:focus ~ label,
+.modal .modal-content .login_credentials .input-container input:valid ~ label {
+  top: -9px;
+  background-color: #252833;
+  font-size: 12px;
+}
+.modal .modal-content .login_credentials .help {
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+.modal .modal-content .login_credentials .help p {
+  font-size: 0.8rem;
+  font-weight: 700;
 }/*# sourceMappingURL=subscripition.css.map */
