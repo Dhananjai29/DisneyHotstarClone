@@ -234,10 +234,10 @@ body {
 .subscripitionbody .subsRight .right-bottom .price .card h4 {
   font-weight: 600;
   font-size: 1rem;
-  color: #FFCC75;
+  color: #707A94;
 }
 .subscripitionbody .subsRight .right-bottom .price .card small {
-  color: #E1E6F0;
+  color: #707A94;
   font-size: 0.8rem;
   font-weight: 100;
 }
@@ -253,6 +253,7 @@ body {
   top: -10px;
   right: -10px;
   border: 4px solid #0F0F14;
+  display: none;
 }
 
 .modal .modal-content {
@@ -291,7 +292,7 @@ body {
 .modal .modal-content .image_scroller .scroller img {
   border-radius: 10px;
   height: 100%;
-  width: 80%;
+  width: 100%;
   padding: 0 3px;
 }
 .modal .modal-content .image_scroller .middle {
@@ -337,6 +338,21 @@ body {
 }
 .modal .modal-content .login_credentials h6 {
   font-weight: 700;
+}
+.modal .modal-content .login_credentials .button button {
+  background: linear-gradient(to right, #095ae6, #062794);
+  color: white;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease all;
+  cursor: not-allowed;
+}
+.modal .modal-content .login_credentials .button :hover {
+  background: linear-gradient(to right, rgba(9, 90, 230, 0.3921568627), rgba(6, 39, 148, 0.3921568627));
+  color: rgba(255, 255, 255, 0.477);
 }
 .modal .modal-content .login_credentials .input-container {
   position: relative;

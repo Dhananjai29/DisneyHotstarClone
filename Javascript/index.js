@@ -3,7 +3,7 @@ var splide = new Splide( '#main-carousel', {
     arrows: false,
     drag: false,
     autoplay: true,
-    interval: 7000,
+    interval: 10000,
     type: 'loop',
   } );
   

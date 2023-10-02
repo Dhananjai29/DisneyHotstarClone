@@ -208,9 +208,9 @@
                     <thead>
                         <tr class="tableRow">
                             <th>&nbsp;</th>
-                            <th>Super</th>
-                            <th>Super <br> <small style="background-color: transparent;">+ Ads free</th></small>
-                            <th>Premium</th>
+                            <th id="tableHead1" style="color: #ffcc75;">Super</th>
+                            <th id="tableHead2">Super <br> <small style="background-color: transparent; color: #707A94;">+ Ads free</th></small>
+                            <th id="tableHead3">Premium</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -325,22 +325,22 @@
            
                 <div class="price">
                     <div class="card" id="one" onclick="priceBtn(2)" style="border: 2px solid white;">
-                        <h4>Super</h4><p><sup style="font-weight: 100;">&#8377;</sup> 899<sub style="font-weight: 100; font-size: 0.8rem;">/Year</sub></p>
-                        <span>
+                        <h4 id="heading1" style="color: #ffcc75;">Super</h4><p><sup style="font-weight: 100;">&#8377;</sup> 899<sub style="font-weight: 100; font-size: 0.8rem;">/Year</sub></p>
+                        <span id="superTick" style="display: block;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"/></svg>
                         </span>
                     </div>
 
                     <div class="card" id="two" onclick="priceBtn(3)">
-                        <h4>Super <small>+ Ads free</small></h4><p><sup style="font-weight: 100;">&#8377;</sup> 1099<sub style="font-weight: 100; font-size: 0.8rem;">/Year</sub></p>
-                        <span>
+                        <h4 id="heading2">Super <small>+ Ads free</small></h4><p><sup style="font-weight: 100;">&#8377;</sup> 1099<sub style="font-weight: 100; font-size: 0.8rem;">/Year</sub></p>
+                        <span id="super+Tick">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"/></svg>
                         </span>
                     </div>
 
                     <div class="card" id="three" onclick="priceBtn(4)">
-                        <h4>Premium</h4><p><sup style="font-weight: 100;">&#8377;</sup> 1499<sub style="font-weight: 100; font-size: 0.8rem;">/Year</sub></p>
-                        <span>
+                        <h4 id="heading3">Premium</h4><p><sup style="font-weight: 100;">&#8377;</sup> 1499<sub style="font-weight: 100; font-size: 0.8rem;">/Year</sub></p>
+                        <span id="premiumTick">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"/></svg>
                         </span>
                     </div>
@@ -398,6 +398,10 @@
                             <p style="width: 20%; padding: 10px;">+91</p>
                             <input type="text" required=""/>
                             <label>Enter mobile number</label>
+                        </div>
+
+                        <div class="button">
+                            <button disabled>Continue</button>
                         </div>
                     </div>
                     <div class="help">
